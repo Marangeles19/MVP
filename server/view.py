@@ -1,8 +1,8 @@
 import tkinter as tk
 
 class CalculadoraView:
-    def __init__(self, controller):
-        self.controller = controller
+    def __init__(self, presenter):
+        self.presenter = presenter
 
         self.root = tk.Tk()
         self.root.title("Calculadora MVP")
@@ -28,7 +28,7 @@ class CalculadoraView:
     def on_sumar_clicked(self):
         valor1 = self.entry1.get()
         valor2 = self.entry2.get()
-        self.controller.sumar(valor1, valor2)
+        self.presenter.sumar(valor1, valor2)
 
     def mostrar_resultado(self, resultado):
         self.resultado_label.config(text=f"Resultado: {resultado}")

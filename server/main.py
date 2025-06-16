@@ -1,8 +1,8 @@
-from controller import CalculadoraController
+from presenter import CalculadoraPresenter
 from view import CalculadoraView
 
 if __name__ == "__main__":
     view = CalculadoraView(None)
-    controller = CalculadoraController(view)
-    view.controller = controller
+    presenter = CalculadoraPresenter(view)
+    view.presenter = presenter
     view.iniciar()

@@ -1,6 +1,6 @@
 from model import CalculadoraModel
 
-class CalculadoraController:
+class CalculadoraPresenter:
     def __init__(self, view):
         self.view = view
         self.model = CalculadoraModel()
